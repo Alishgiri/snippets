@@ -1,0 +1,56 @@
+{
+	// Place your snippets for dart here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"flutter stateful class": {
+		"prefix": "stateful",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"",
+			"class $1 extends StatefulWidget {",
+			  "_$1 createState() => _$1();",
+			"}",
+			"",
+			"class _$1 extends State<$1> {",
+			"  @override",
+			"  Widget build(BuildContext context) {",
+			"    return Scaffold(",
+			"      appBar: AppBar(),",
+			"      body: Column(",
+			"        children: <Widget>[$0],",
+			"      ),",
+			"    );",
+			"  }",
+			"}"
+		],
+		"description": "flutter stateful class"
+	},
+	"flutter stateless class": {
+		"prefix": "stateless",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"",
+			"class $1 extends StatelessWidget {",
+			"  @override",
+			"  Widget build(BuildContext context) {",
+			"    return Scaffold(",
+			"      appBar: AppBar(),",
+			"      body: Column(",
+			"        children: <Widget>[$0],",
+			"      ),",
+			"    );",
+			"  }",
+			"}",
+		],
+		"description": "flutter stateless class"
+	},
+	"object print": {
+		"prefix": "objprint",
+		"body": [
+			"print({\"$1\": $2}$0)",
+		],
+		"description": "dart print statement"
+	}
+}
